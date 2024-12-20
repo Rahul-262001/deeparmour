@@ -108,4 +108,3 @@ This Python script interacts with the AWS SDK `boto3` to perform security checks
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
