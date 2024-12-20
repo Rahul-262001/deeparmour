@@ -30,7 +30,7 @@ This project is designed to check for common security misconfigurations in AWS s
 
 1. Clone the repository:
    ```bash
-   git clone (https://github.com/Rahul-262001/deeparmour)
+   git clone https://github.com/Rahul-262001/deeparmour
    ```
 
 2. Install the required dependencies:
