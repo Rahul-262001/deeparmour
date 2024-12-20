@@ -54,22 +54,32 @@ This project is designed to check for common security misconfigurations in AWS s
 ## Example Output
 
 ```plaintext
-Timestamp: 2024-12-20 12:34:56
+Timestamp: 2024-12-20 18:16:43
 AWS Security Misconfiguration Report
 Checking S3 Buckets...
-1. Bucket my-bucket is publicly accessible.
-2. Bucket with logging enabled
-3. Bucket with versioning enabled
 
+Checking bucket: test-bucket-deeparmour
+1.Bucket test-bucket-deeparmour is publicly accessible.
+2.Bucket with logging disabled
+3.Bucket with versioning disabled
 Checking RDS instances...
-1. RDS instance my-db-instance is publicly accessible
-2. RDS instance has backup enabled
-3. RDS instance has delete protection enabled
 
+Checking RDS instance:  test-deeparmour-db
+1.RDS instance is publicly accessible
+2.RDS instance has backup disabled
+3.RDS instance has no delete protection
 Checking security groups...
-1. Security Group sg-01 ALLOWS public SSH access.
-2. Security Group sg-01 DOES NOT allow public MongoDB access.
-3. Security Group sg-01 ALLOWS public MySQL access.
+
+Checking security group named: test-deeparmour-sec
+1. Security Group: test-deeparmour-sec ALLOWS public SSH access.
+2. Security Group: test-deeparmour-sec ALLOWS public Mongodb access.
+3. Security Group: test-deeparmour-sec ALLOWS public MySQL access.
+
+Checking security group named: default
+1. Security Group: default DOES NOT allow public SSH access.
+2. Security Group: default DOES NOT allow public Mongodb access.
+3. Security Group: default DOES NOT allow public MySQL access.
+
 ```
 
 ## Script Explanation
