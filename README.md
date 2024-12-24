@@ -100,11 +100,6 @@ This Python script interacts with the AWS SDK `boto3` to perform security checks
    - Reviews EC2 security groups for open access to certain ports (SSH, MySQL, MongoDB).
    - Identifies which security groups allow unrestricted access (`0.0.0.0/0`) to sensitive services.
 
-## Notes
-
-- **Security Concerns**: Avoid hardcoding AWS access keys directly in the script. Use AWS IAM roles or environment variables for better security practices.
-- **Modifications**: Feel free to extend the script to include more checks or integrate with other AWS services.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
